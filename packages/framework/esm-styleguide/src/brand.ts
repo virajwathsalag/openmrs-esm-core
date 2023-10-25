@@ -1,4 +1,4 @@
-import { getConfigStore } from "@openmrs/esm-config";
+import { getConfigStore } from "@openmrs/esm-framework";
 
 export function setupBranding() {
   getConfigStore("@openmrs/esm-styleguide").subscribe((store) => {
