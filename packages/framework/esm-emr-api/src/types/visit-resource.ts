@@ -1,4 +1,4 @@
-import { OpenmrsResource } from "./openmrs-resource";
+import { type OpenmrsResource, type Location } from "@openmrs/esm-api";
 
 export interface NewVisitPayload {
   uuid?: string;
@@ -26,12 +26,6 @@ export interface Visit {
   stopDatetime?: string;
   attributes?: Array<OpenmrsResource>;
   [anythingElse: string]: any;
-}
-
-export interface Location {
-  uuid: string;
-  display?: string;
-  name?: string;
 }
 
 export interface VisitType {

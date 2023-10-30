@@ -1,6 +1,6 @@
 /** @module @category API */
 import { useEffect, useReducer } from "react";
-import { fetchCurrentPatient, PatientUuid } from "@openmrs/esm-api";
+import { fetchCurrentPatient, type PatientUuid } from "@openmrs/esm-emr-api";
 
 export type NullablePatient = fhir.Patient | null;
 

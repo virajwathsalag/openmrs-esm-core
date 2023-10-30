@@ -41,6 +41,7 @@
     "@openmrs/esm-breadcrumbs": "^5.2.0",
     "@openmrs/esm-config": "^5.2.0",
     "@openmrs/esm-dynamic-loading": "^5.2.0",
+    "@openmrs/esm-emr-api": "^5.2.0",
     "@openmrs/esm-error-handling": "^5.2.0",
     "@openmrs/esm-extensions": "^5.2.0",
     "@openmrs/esm-feature-flags": "^5.2.0",

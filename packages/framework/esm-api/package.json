@@ -41,15 +41,7 @@
     "@types/fhir": "0.0.31",
     "lodash-es": "^4.17.21"
   },
-  "peerDependencies": {
-    "@openmrs/esm-config": "5.x",
-    "@openmrs/esm-error-handling": "5.x",
-    "@openmrs/esm-offline": "5.x"
-  },
   "devDependencies": {
-    "@openmrs/esm-config": "^5.2.0",
-    "@openmrs/esm-error-handling": "^5.2.0",
-    "@openmrs/esm-state": "^5.2.0",
     "rxjs": "^6.5.3",
     "webpack": "^5.88.0"
   }

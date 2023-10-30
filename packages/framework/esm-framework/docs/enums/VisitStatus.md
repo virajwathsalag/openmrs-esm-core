@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:128](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L128)
+[packages/framework/esm-emr-api/src/shared-objects/visit-utils.ts:123](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/shared-objects/visit-utils.ts#L123)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:129](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L129)
+[packages/framework/esm-emr-api/src/shared-objects/visit-utils.ts:124](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-emr-api/src/shared-objects/visit-utils.ts#L124)

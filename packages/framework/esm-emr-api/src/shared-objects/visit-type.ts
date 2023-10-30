@@ -1,8 +1,8 @@
 /** @module @category API */
 import { Observable } from "rxjs";
 import { map, take } from "rxjs/operators";
-import { openmrsObservableFetch } from "../openmrs-fetch";
-import { VisitType } from "../types";
+import { openmrsObservableFetch } from "@openmrs/esm-api";
+import { VisitType } from "../types/visit-resource";
 
 export function toVisitTypeObject(openmrsRestForm: any): VisitType {
   return {

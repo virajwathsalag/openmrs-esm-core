@@ -1,10 +1,10 @@
 /** @module @category API */
+import { openmrsFetch } from "@openmrs/esm-api";
 import {
   defaultVisitCustomRepresentation,
   getVisitStore,
-  openmrsFetch,
   Visit,
-} from "@openmrs/esm-api";
+} from "@openmrs/esm-emr-api";
 import useSWR from "swr";
 import dayjs from "dayjs";
 import isToday from "dayjs/plugin/isToday";

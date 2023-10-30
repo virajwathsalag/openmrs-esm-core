@@ -1,14 +1,9 @@
 /** @module @category API */
 import { Observable, BehaviorSubject } from "rxjs";
 import { take, map } from "rxjs/operators";
-import { openmrsObservableFetch } from "../openmrs-fetch";
-import {
-  FetchResponse,
-  NewVisitPayload,
-  UpdateVisitPayload,
-  Visit,
-} from "../types";
+import { type FetchResponse, openmrsObservableFetch } from "@openmrs/esm-api";
 import { getGlobalStore } from "@openmrs/esm-state";
+import type { NewVisitPayload, UpdateVisitPayload, Visit } from "../types";
 
 export const defaultVisitCustomRepresentation =
   "custom:(uuid,encounters:(uuid,encounterDatetime," +

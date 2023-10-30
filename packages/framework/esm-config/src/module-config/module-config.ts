@@ -17,19 +17,18 @@ import {
   isString,
 } from "../validators/type-validators";
 import {
-  ConfigExtensionStore,
-  ConfigInternalStore,
+  type ConfigExtensionStore,
+  type ConfigInternalStore,
   configInternalStore,
-  ConfigStore,
+  type ConfigStore,
   configExtensionStore,
   getConfigStore,
   getExtensionsConfigStore,
   implementerToolsConfigStore,
+  type TemporaryConfigStore,
   temporaryConfigStore,
   getExtensionSlotsConfigStore,
 } from "./state";
-import type {} from "@openmrs/esm-globals";
-import { TemporaryConfigStore } from "..";
 
 /**
  * Store setup

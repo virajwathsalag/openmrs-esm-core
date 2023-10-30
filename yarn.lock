@@ -3682,17 +3682,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@openmrs/esm-api@workspace:packages/framework/esm-api"
   dependencies:
-    "@openmrs/esm-config": ^5.2.0
-    "@openmrs/esm-error-handling": ^5.2.0
-    "@openmrs/esm-state": ^5.2.0
     "@types/fhir": 0.0.31
     lodash-es: ^4.17.21
     rxjs: ^6.5.3
     webpack: ^5.88.0
-  peerDependencies:
-    "@openmrs/esm-config": 5.x
-    "@openmrs/esm-error-handling": 5.x
-    "@openmrs/esm-offline": 5.x
   languageName: unknown
   linkType: soft
 
@@ -3838,6 +3831,26 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@openmrs/esm-emr-api@^5.2.0, @openmrs/esm-emr-api@workspace:packages/framework/esm-emr-api":
+  version: 0.0.0-use.local
+  resolution: "@openmrs/esm-emr-api@workspace:packages/framework/esm-emr-api"
+  dependencies:
+    "@openmrs/esm-api": ^5.2.0
+    "@openmrs/esm-config": ^5.2.0
+    "@openmrs/esm-error-handling": ^5.2.0
+    "@openmrs/esm-state": ^5.2.0
+    "@types/fhir": 0.0.31
+    lodash-es: ^4.17.21
+    rxjs: ^6.5.3
+    webpack: ^5.88.0
+  peerDependencies:
+    "@openmrs/esm-api": 5.x
+    "@openmrs/esm-config": 5.x
+    "@openmrs/esm-error-handling": 5.x
+    "@openmrs/esm-offline": 5.x
+  languageName: unknown
+  linkType: soft
+
 "@openmrs/esm-error-handling@^5.2.0, @openmrs/esm-error-handling@workspace:packages/framework/esm-error-handling":
   version: 0.0.0-use.local
   resolution: "@openmrs/esm-error-handling@workspace:packages/framework/esm-error-handling"
@@ -3889,6 +3902,7 @@ __metadata:
     "@openmrs/esm-breadcrumbs": ^5.2.0
     "@openmrs/esm-config": ^5.2.0
     "@openmrs/esm-dynamic-loading": ^5.2.0
+    "@openmrs/esm-emr-api": ^5.2.0
     "@openmrs/esm-error-handling": ^5.2.0
     "@openmrs/esm-extensions": ^5.2.0
     "@openmrs/esm-feature-flags": ^5.2.0
