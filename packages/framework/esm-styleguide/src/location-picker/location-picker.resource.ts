@@ -7,6 +7,7 @@ import {
   useDebounce,
 } from '@openmrs/esm-framework';
 import { useMemo } from 'react';
+import type { KeyedMutator } from 'swr';
 import useSwrImmutable from 'swr/immutable';
 import { useTranslation } from 'react-i18next';
 import useSwrInfinite from 'swr/infinite';
@@ -32,6 +33,7 @@ export interface LoginLocationData {
   hasMore: boolean;
   loadingNewData: boolean;
   setPage: (size: number | ((_size: number) => number)) => Promise<FetchResponse<LocationResponse>[] | undefined>;
+  mutate: KeyedMutator<FetchResponse<LocationResponse>[]>;
   error?: Error;
 }
 
@@ -103,10 +105,10 @@ export function useLocations(locationTag?: string, count: number = 0, searchQuer
     return url + urlSearchParameters.toString();
   }
 
-  const { data, isLoading, isValidating, setSize, error } = useSwrInfinite<FetchResponse<LocationResponse>, Error>(
-    constructUrl,
-    openmrsFetch,
-  );
+  const { data, isLoading, isValidating, setSize, mutate, error } = useSwrInfinite<
+    FetchResponse<LocationResponse>,
+    Error
+  >(constructUrl, openmrsFetch);
 
   if (error) {
     showNotification({
@@ -125,9 +127,10 @@ export function useLocations(locationTag?: string, count: number = 0, searchQuer
       hasMore: data?.length ? data?.[data.length - 1]?.data?.link?.some((link) => link.relation === 'next') : false,
       loadingNewData: isValidating,
       setPage: setSize,
+      mutate,
       error,
     };
-  }, [isLoading, data, isValidating, setSize]);
+  }, [isLoading, data, isValidating, setSize, mutate, error]);
 
   return memoizedLocations;
 }

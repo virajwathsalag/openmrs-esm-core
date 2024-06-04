@@ -82,3 +82,12 @@
   justify-content: center;
   margin: spacing.$spacing-06 auto 0rem;
 }
+
+.loader {
+  min-height: fit-content;
+}
+
+.errorNotification {
+  margin-inline-start: -1.5rem;
+  margin-inline-end: -1.5rem;
+}

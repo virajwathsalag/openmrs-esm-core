@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { InlineLoading, Search, RadioButton, RadioButtonGroup, RadioButtonSkeleton } from '@carbon/react';
 import styles from './location-picker.module.scss';
 import { useLocationByUuid, useLocations } from './location-picker.resource';
+import { ActionableNotification } from '@carbon/react';
+import { getCoreTranslation } from '@openmrs/esm-translations';
 
 interface LocationPickerProps {
   selectedLocationUuid: string | null;
@@ -41,6 +43,8 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
     hasMore,
     loadingNewData,
     setPage,
+    mutate,
+    error,
   } = useLocations(locationTag, locationsPerRequest, searchTerm);
 
   const locations = useMemo(() => {
@@ -98,7 +102,7 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
             <RadioButtonSkeleton className={styles.radioButtonSkeleton} role="progressbar" />
             <RadioButtonSkeleton className={styles.radioButtonSkeleton} role="progressbar" />
           </div>
-        ) : (
+        ) : !error ? (
           <>
             <div className={styles.locationResultsContainer}>
               {locations?.length > 0 ? (
@@ -133,6 +137,21 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
               </div>
             )}
           </>
+        ) : (
+          <div className={styles.errorNotification}>
+            <ActionableNotification
+              actionButtonLabel={t('tryAgain', 'Try again')}
+              hideCloseButton
+              inline
+              kind="error"
+              onActionButtonClick={mutate}
+              title={t('errorLoadingLocations', 'Error loading locations')}
+              subtitle={getCoreTranslation(
+                'contactAdministratorIfIssuePersists',
+                'Contact your system administrator if the problem persists.',
+              )}
+            />
+          </div>
         )}
       </div>
     </div>

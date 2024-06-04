@@ -30,11 +30,7 @@ const ChooseLocation: React.FC<ChooseLocationProps> = ({ hideWelcomeMessage, cur
   const isUpdateFlow = useMemo(() => searchParams.get('update') === 'true', [searchParams]);
   const { defaultLocation, updateDefaultLocation, savePreference, setSavePreference } =
     useDefaultLocation(isUpdateFlow);
-  const {
-    isLoading: isLoadingLocationCount,
-    locationCount,
-    firstLocation,
-  } = useLocationCount(chooseLocation.useLoginLocationTag);
+  const { locationCount, firstLocation } = useLocationCount(chooseLocation.useLoginLocationTag);
 
   const { user, sessionLocation } = useSession();
   const { currentUser, userProperties } = useMemo(
@@ -87,14 +83,10 @@ const ChooseLocation: React.FC<ChooseLocationProps> = ({ hideWelcomeMessage, cur
 
   // Handle cases where the location picker is disabled, there is only one location, or there are no locations.
   useEffect(() => {
-    if (isLoadingLocationCount) return;
-
-    if (locationCount == 0) {
-      changeLocation();
-    } else if (locationCount == 1 || !chooseLocation.enabled) {
+    if (locationCount == 1 || !chooseLocation.enabled) {
       changeLocation(firstLocation!.resource.id, true);
     }
-  }, [locationCount, isLoadingLocationCount]);
+  }, [locationCount]);
 
   // Handle cases where the login location is present in the userProperties.
   useEffect(() => {
