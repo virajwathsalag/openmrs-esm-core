@@ -5,13 +5,25 @@ import styles from './location-picker.module.scss';
 import { useLocationByUuid, useLocations } from './location-picker.resource';
 
 interface LocationPickerProps {
-  selectedLocationUuid?: string;
+  selectedLocationUuid: string | null;
+  onChange: (locationUuid?: string) => void;
   defaultLocationUuid?: string;
   locationTag?: string;
   locationsPerRequest?: number;
-  onChange: (locationUuid?: string) => void;
 }
 
+/**
+ * This is a generic location picker component. It fetches locations based on the location tag provided.
+ * It uses infinite scroll and includes a searchbar. It is a controlled input, so it expects a
+ * selectedLocationUuid and an onChange function to be passed in as props.
+ *
+ * @param options.selectedLocationUuid - The currently selected location's UUID. If there is no selected location, use null.
+ * @param options.onChange - A function that will be called when a location is selected.
+ * @param options.defaultLocationUuid - The UUID of the default location to be displayed at the top of the list. The location
+ *                                   will be used regardless of whether it has the correct location tag.
+ * @param options.locationTag - The location tag to filter locations by.
+ * @param options.locationsPerRequest - The number of locations to fetch per request. Default is 50.
+ */
 export const LocationPicker: React.FC<LocationPickerProps> = ({
   selectedLocationUuid,
   defaultLocationUuid,
@@ -21,8 +33,7 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
 }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState<string>('');
-
-  let defaultLocation = defaultLocationUuid ? useLocationByUuid(defaultLocationUuid).location : null;
+  let defaultLocation = useLocationByUuid(defaultLocationUuid).location;
 
   const {
     locations: fetchedLocations,
@@ -33,10 +44,10 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
   } = useLocations(locationTag, locationsPerRequest, searchTerm);
 
   const locations = useMemo(() => {
-    if (defaultLocation && !searchTerm) {
+    if (fetchedLocations && defaultLocation && !searchTerm) {
       return [defaultLocation, ...fetchedLocations?.filter(({ resource }) => resource.id !== defaultLocationUuid)];
     }
-    return fetchedLocations;
+    return fetchedLocations ?? [];
   }, [defaultLocation, fetchedLocations]);
 
   const search = (location: string) => {

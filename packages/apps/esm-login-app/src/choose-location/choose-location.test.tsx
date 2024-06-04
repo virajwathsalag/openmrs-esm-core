@@ -1,3 +1,4 @@
+import React from 'react';
 import { act, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {
@@ -7,12 +8,10 @@ import {
   setSessionLocation,
   setUserProperties,
   showSnackbar,
-  showToast,
   LocationPicker,
 } from '@openmrs/esm-framework';
 import {
   mockLoginLocations,
-  mockSoleLoginLocation,
   validatingLocationFailureResponse,
   validatingLocationSuccessResponse,
 } from '../../__mocks__/locations.mock';
@@ -34,8 +33,39 @@ const invalidLocationUuid = '2gf1b7d4-c865-4178-82b0-5932e51503d6';
 const userUuid = '90bd24b3-e700-46b0-a5ef-c85afdfededd';
 
 const mockedOpenmrsFetch = openmrsFetch as jest.Mock;
-const mockedUseConfig = useConfig as jest.Mock;
+const mockedUseConfig = jest.mocked(useConfig);
 const mockUseSession = useSession as jest.Mock;
+
+const MockLocationPicker = jest.mocked(LocationPicker);
+
+MockLocationPicker.mockImplementation(({ onChange, selectedLocationUuid }) => {
+  const locations = [
+    {
+      uuid: 'uuid_1',
+      name: 'location_1',
+    },
+    {
+      uuid: 'uuid_2',
+      name: 'location_2',
+    },
+  ];
+  return (
+    <div>
+      {locations.map((location) => (
+        <label key={location.uuid}>
+          <input
+            type="radio"
+            name="location"
+            value={location.uuid}
+            checked={location.uuid === selectedLocationUuid}
+            onChange={() => onChange(location.uuid)}
+          />
+          {location.name}
+        </label>
+      ))}
+    </div>
+  );
+});
 
 mockedUseConfig.mockReturnValue(mockConfig);
 mockUseSession.mockReturnValue({

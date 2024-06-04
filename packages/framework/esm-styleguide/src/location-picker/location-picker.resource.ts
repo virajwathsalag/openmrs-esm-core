@@ -1,9 +1,15 @@
-import { type FetchResponse, fhirBaseUrl, openmrsFetch, showNotification, useDebounce } from '@openmrs/esm-framework';
+import {
+  type FetchResponse,
+  type FHIRLocationResource,
+  fhirBaseUrl,
+  openmrsFetch,
+  showNotification,
+  useDebounce,
+} from '@openmrs/esm-framework';
 import { useMemo } from 'react';
 import useSwrImmutable from 'swr/immutable';
 import { useTranslation } from 'react-i18next';
 import useSwrInfinite from 'swr/infinite';
-import { type FHIRLocationResource } from '@openmrs/esm-api/src/types/location-resource';
 
 export interface LocationResponse {
   type: string;
@@ -29,8 +35,8 @@ export interface LoginLocationData {
   error?: Error;
 }
 
-export function useLocationByUuid(locationUuid: string) {
-  const url = `/ws/fhir2/R4/Location?_id=${locationUuid}`;
+export function useLocationByUuid(locationUuid?: string) {
+  const url = locationUuid ? `/ws/fhir2/R4/Location?_id=${locationUuid}` : null;
   const { data, error, isLoading } = useSwrImmutable<FetchResponse<LocationResponse>>(url, openmrsFetch, {
     shouldRetryOnError(err) {
       if (err?.response?.status) {

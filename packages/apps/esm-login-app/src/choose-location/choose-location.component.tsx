@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useLocation, type Location, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Button, Checkbox, InlineLoading } from '@carbon/react';
@@ -12,7 +12,7 @@ import {
   LocationPicker,
 } from '@openmrs/esm-framework';
 import type { LoginReferrer } from '../login/login.component';
-import styles from './location-picker.scss';
+import styles from './choose-location.scss';
 import { useDefaultLocation, useLocationCount } from './choose-location.resource';
 import type { ConfigSchema } from '../config-schema';
 
