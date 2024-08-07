@@ -679,7 +679,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:583](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L583)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:592](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L592)
 
 ___
 
@@ -884,6 +884,16 @@ ___
 #### Defined in
 
 [packages/framework/esm-react-utils/src/useLayoutType.ts:4](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-react-utils/src/useLayoutType.ts#L4)
+
+___
+
+### PageHeaderProps
+
+Ƭ **PageHeaderProps**: `XOR`<[`PageHeaderWrapperProps`](interfaces/PageHeaderWrapperProps.md), [`PageHeaderContentProps`](interfaces/PageHeaderContentProps.md)\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/page-header/page-header.component.tsx:29](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/page-header/page-header.component.tsx#L29)
 
 ___
 
@@ -1131,7 +1141,17 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:557](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L557)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:566](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L566)
+
+___
+
+### AppointmentsPictogram
+
+• `Const` **AppointmentsPictogram**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`PictogramProps`](API.md#pictogramprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/pictograms/pictograms.tsx:48](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/pictograms/pictograms.tsx#L48)
 
 ___
 
@@ -1181,7 +1201,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:562](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L562)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:571](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L571)
 
 ___
 
@@ -1345,7 +1365,7 @@ Note this is an alias for ListCheckedIcon
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:569](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L569)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:578](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L578)
 
 ___
 
@@ -1439,6 +1459,16 @@ ___
 
 ___
 
+### HomePictogram
+
+• `Const` **HomePictogram**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`PictogramProps`](API.md#pictogramprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/pictograms/pictograms.tsx:36](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/pictograms/pictograms.tsx#L36)
+
+___
+
 ### HospitalBedIcon
 
 • `Const` **HospitalBedIcon**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`IconProps`](API.md#iconprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
@@ -1457,7 +1487,7 @@ This is a utility type for custom icons that use the svg-sprite-loader to bundle
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:591](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L591)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:600](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L600)
 
 ___
 
@@ -1478,6 +1508,16 @@ ___
 #### Defined in
 
 [packages/framework/esm-styleguide/src/icons/icons.tsx:262](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L262)
+
+___
+
+### LaboratoryPictogram
+
+• `Const` **LaboratoryPictogram**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`PictogramProps`](API.md#pictogramprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/pictograms/pictograms.tsx:60](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/pictograms/pictograms.tsx#L60)
 
 ___
 
@@ -1601,7 +1641,17 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:514](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L514)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:523](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L523)
+
+___
+
+### PatientListsPictogram
+
+• `Const` **PatientListsPictogram**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`PictogramProps`](API.md#pictogramprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/pictograms/pictograms.tsx:42](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/pictograms/pictograms.tsx#L42)
 
 ___
 
@@ -1653,7 +1703,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:574](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L574)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:583](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L583)
 
 ___
 
@@ -1697,6 +1747,16 @@ ___
 
 ___
 
+### ServiceQueuesPictogram
+
+• `Const` **ServiceQueuesPictogram**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`PictogramProps`](API.md#pictogramprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/pictograms/pictograms.tsx:54](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/pictograms/pictograms.tsx#L54)
+
+___
+
 ### ShoppingCartAddItemIcon
 
 • `Const` **ShoppingCartAddItemIcon**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`IconProps`](API.md#iconprops) & `RefAttributes`<`SVGSVGElement`\>\>\> = `ShoppingCartArrowDownIcon`
@@ -1707,7 +1767,7 @@ Note this is an alias for ShoppingCartArrowDownIcon
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:581](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L581)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:590](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L590)
 
 ___
 
@@ -1735,6 +1795,18 @@ Order Basket, the UI to enter Orders for Medications, Referrals, Labs, Procedure
 
 ___
 
+### StickyNoteAddIcon
+
+• `Const` **StickyNoteAddIcon**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`IconProps`](API.md#iconprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
+
+Used as action button to open ward in-patient note workspace
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/icons/icons.tsx:442](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L442)
+
+___
+
 ### SwitcherIcon
 
 • `Const` **SwitcherIcon**: `MemoExoticComponent`<`ForwardRefExoticComponent`<[`IconProps`](API.md#iconprops) & `RefAttributes`<`SVGSVGElement`\>\>\>
@@ -1751,7 +1823,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:450](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L450)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:459](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L459)
 
 ___
 
@@ -1763,7 +1835,7 @@ Used as a button to add an item to the Order basket from a search
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:442](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L442)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:451](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L451)
 
 ___
 
@@ -1775,7 +1847,7 @@ Lab investigations
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:459](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L459)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:468](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L468)
 
 ___
 
@@ -1785,7 +1857,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:467](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L467)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:476](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L476)
 
 ___
 
@@ -1805,7 +1877,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:475](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L475)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:484](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L484)
 
 ___
 
@@ -1815,7 +1887,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:483](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L483)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:492](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L492)
 
 ___
 
@@ -1827,7 +1899,7 @@ User of OpenMRS e.g. My Account
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:492](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L492)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:501](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L501)
 
 ___
 
@@ -1837,7 +1909,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:500](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L500)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:509](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L509)
 
 ___
 
@@ -1847,7 +1919,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:522](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L522)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:531](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L531)
 
 ___
 
@@ -1857,7 +1929,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:508](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L508)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:517](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L517)
 
 ___
 
@@ -1867,7 +1939,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:538](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L538)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:547](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L547)
 
 ___
 
@@ -1877,7 +1949,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:530](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L530)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:539](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L539)
 
 ___
 
@@ -1887,7 +1959,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-styleguide/src/icons/icons.tsx:546](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L546)
+[packages/framework/esm-styleguide/src/icons/icons.tsx:555](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/icons/icons.tsx#L555)
 
 ___
 
@@ -1917,6 +1989,62 @@ ___
 #### Defined in
 
 [packages/framework/esm-styleguide/src/left-nav/index.tsx:31](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/left-nav/index.tsx#L31)
+
+___
+
+### PageHeader
+
+• `Const` **PageHeader**: `React.FC`<[`PageHeaderProps`](API.md#pageheaderprops)\>
+
+The page header is typically located at the top of a dashboard. It includes a pictogram on the left,
+the name of the dashboard or page, and the `implementationName` from the configuration, which is typically
+the name of the clinic or the authority that is using the implementation. It can also include interactive
+content on the right-hand side. It can be used in two ways:
+
+1. Alone, in order to render just the page header, with no content on the right side:
+
+**`example`**
+```tsx
+  <PageHeader title="My Dashboard" illustration={<Illustration />} />
+```
+
+2. Wrapped around the [PageHeaderContent](API.md#pageheadercontent) component, in order to render the page header on the left
+and some other content on the right side:
+
+**`example`**
+```tsx
+  <PageHeader>
+    <PageHeaderContent title="My Dashboard" illustration={<Illustration />} />
+    <Button>Click me</Button>
+  </PageHeader>
+```
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/page-header/page-header.component.tsx:57](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/page-header/page-header.component.tsx#L57)
+
+___
+
+### PageHeaderContent
+
+• `Const` **PageHeaderContent**: `React.FC`<[`PageHeaderContentProps`](interfaces/PageHeaderContentProps.md)\>
+
+The PageHeaderContent component should be used inside the [PageHeader](API.md#pageheader) component. It is used if the page
+header should include some content on the right side, in addition to the pictogram and the name of the page.
+If only the page header is needed, without any additional content, the [PageHeader](API.md#pageheader) component can be used
+on its own, and the PageHeaderContent component is not needed.
+
+**`example`**
+```tsx
+  <PageHeader>
+    <PageHeaderContent title="My Dashboard" illustration={<Illustration />} />
+    <Button>Click me</Button>
+  </PageHeader>
+```
+
+#### Defined in
+
+[packages/framework/esm-styleguide/src/page-header/page-header.component.tsx:85](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-styleguide/src/page-header/page-header.component.tsx#L85)
 
 ___
 
