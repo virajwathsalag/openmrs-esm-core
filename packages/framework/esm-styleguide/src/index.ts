@@ -22,6 +22,7 @@ export * from './patient-photo';
 export * from './custom-overflow-menu';
 export * from './icons';
 export * from './pictograms';
+export * from './tile';
 
 defineConfigSchema('@openmrs/esm-styleguide', esmStyleGuideSchema);
 setupBranding();
